@@ -5,7 +5,7 @@
 
 # ✔- Full Stack Search Engine - ✔
 
-_**In this webproject as part of the SAE Bachelor program 6GST0XD10x I'm building a full stack search engine with next.js using postgres full-text search and semantic quaring Upstash Vectorto be able to use it on a separate subpage depending on the initial situation for my website: www.toycarsaddict.club. You can also find access to the project on my developer page: www.svendolin-productions.ch - I also tried to implement another interesting way of searching: the so called reverse image search.**_
+_**In this webproject as part of the SAE Bachelor program 6GST0XD10x I'm building a full stack search engine with next.js using postgres full-text search and semantic quaring Upstash Vector to be able to use it on a separate subpage depending on the initial situation for my website: www.toycarsaddict.club. You can also find access to the project on my developer page: www.svendolin-productions.ch - I also tried to implement another interesting way of searching: the so called reverse image search.**_
         
 | TYPE | LINK | 
 |:--------------| :--------------|
