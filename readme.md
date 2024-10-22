@@ -73,6 +73,47 @@ So I decided to build my own full stack search engine on a separate subpage.
 <br />
 
 ***
+## Very Important personal Infos (Rebuild afterwards) ✅
+***
+
+
+
+**Time to build:**
+* Smooth loading states while we are waiting for the search results = With Next.js very enjoyable => In Miliseconcs List from backend 
+
+**Implementig the Technique of SEMANTIC SEARCH QUERYING Upstash Vector**
+* Instant Matches from Database => Also from those which are similar in meaning but dont exactly match the search term
+
+**Full Text Search:**
+* Super powerful full text search capabilities of Postgres
+* When it matches the search term directly, it will be displayed first on the top as the most reöevant result
+
+**Advanced  Next.js routing patterns:**
+* URL switches but the core layout stays the same (Car with all the informations and stuff)
+* Keep logic in a way which does not require a reload of the page => Good for performance and later on for UX
+  
+**Caching Search Results:**
+* Transition back to search page happens instantly > Caching all search results in the background for the best performance
+
+**Product Catalogue:**
+* Filled with an ImageID and descriptions
+* Can be easily updated and extended
+---
+Building Process:
+---
+
+**1) Homepage - Create a basic page without too many details and design elements**
+
+**2) Searchbar - Creating a searchbar**
+
+**3) Product Catalogue - Creating a product catalogue with a list of model cars + Product Preview**
+
+
+
+<br />
+<br />
+
+***
 ## How do Search Engines work? ✅
 ***
 
