@@ -58,7 +58,7 @@ So I decided to build my own full stack search engine on a separate subpage.
   
 
 **G) Why the separation of nice to have and must have?**
-* The scope of work must be clearly scoped. I only have a limited amount of time for this project and have to concentrate on the essentials. You can spend hours and days on a single search feature. That's why I want to include the most important basic functions (MUST HAVE), but these should also work explicitly. The NICE TO HAVE functions are then the features that I can add bit by bit as time permits.
+* The scope of work must be clearly defined. I only have a limited amount of time for this project and have to concentrate on the essentials. You can spend hours and days on a single search feature. That's why I want to include the most important basic functions (MUST HAVE), but these should also work explicitly. The NICE TO HAVE functions are then the features that I can add bit by bit as time permits.
   
 **H) To what extent does the general public benefit from this?**
 * Over the years, the website has been continuously adapted and the scope of the virtual car collection expanded. User testing and feedback from users has shown that we would like to have a faster alternative to the search.
