@@ -138,10 +138,14 @@ Building Process:
 ## Technologies and Installation ✅
 ***
 
-1. AOS Animation On Scroll Library
-    - Github https://michalsnik.github.io/aos/
-2. Favicon generator 
-    - Website https://realfavicongenerator.net/
+1. NODE.JS:
+    - Node.js Info https://www.w3schools.com/nodejs/
+    - Node.js more Info:https://www.w3schools.com/nodejs/nodejs_intro.asp
+    - Node.js Website: https://nodejs.org/en
+    - My Github Repo about node and more: https://github.com/Svendolin/All-about-AJAX-and-Node.js
+2. NPM and JSON:
+    - All you need to know what NPM is https://www.w3schools.com/whatis/whatis_npm.asp
+    - All about the format of JSON https://www.w3schools.com/whatis/whatis_json.asp
 3. Icons from Fontawesome
     - Website https://fontawesome.com/
 4. Submitter to Google Sheet
