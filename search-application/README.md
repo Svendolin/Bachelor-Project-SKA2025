@@ -1,11 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Getting Started: RUN THE DEVELOPMENT SERVER
 
 First, run the development server:
 
 ```bash
-npm run dev
+npm run dev (<3 worked for me pretty well <3)
 # or
 yarn dev
 # or
@@ -18,7 +18,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+**Why .tsx?**
+
+TSX file is commonly associated with TypeScript files that contain React code. TypeScript is a superset of JavaScript that adds static typing to the language, and React is a JavaScript library for building user interfaces.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+**=> STOP the Server with CTRL + C**
 
 ## Learn More
 

@@ -135,22 +135,51 @@ Building Process:
 
 
 ***
-## Technologies and Installation ✅
+## Node.JS / NPM / JSON / Next.JS  ✅
 ***
 
-1. NODE.JS:
+1. **NODE.JS:**
     - Node.js Info https://www.w3schools.com/nodejs/
     - Node.js more Info:https://www.w3schools.com/nodejs/nodejs_intro.asp
     - Node.js Website: https://nodejs.org/en
     - My Github Repo about node and more: https://github.com/Svendolin/All-about-AJAX-and-Node.js
-2. NPM and JSON:
+
+    Long Story Short: Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+      - Da ich mit Daten im Frontend und Backend arbeiten möchte, ist Node.js die perfekte Lösung. Es ermöglicht mir, JavaScript im Backend auszuführen und somit Daten zu verarbeiten und zu speichern.
+      - Backend-Server nutzen JAVA, PHP, Python, Ruby, C# oder Node.js. Node.js ist für mich die gute Wahl, da ich  JavaScript bereits kenne und verwende Es ist auch eine gute Wahl für Anwendungen, die viele Eingaben und Ausgaben haben, da es asynchron ist.
+      - Für das Asynchrone Arbeiten ist Node.js perfekt. Es ist nicht blockierend und kann viele Anfragen gleichzeitig bearbeiten. Es ist auch sehr schnell, da es auf der V8-Engine von Google basiert. Hier kommt Ajax zum Einsatz, um Daten asynchron zu übertragen. Sprich:
+      - Einfügen und Laden von Inhalten us einer Datenbank/einem Server (z.B. localhost), ohne die Webseite jedes Mal zu aktualisieren, oder bspw. beim Klicken auf eine Schaltfläche, wie den Search-Button, ohne die Seite neu zu laden.
+      - Ein localhost bedeutet auf Deutsch „lokaler Host“ oder „lokaler Server“ und wird verwendet, um eine IP-Verbindung oder einen Anruf zu einem lokalen Computer herzustellen. Dieser wird hier in dieser React Umgebung auf Localhost:3000 ausgeführt.
+
+2. **NPM and JSON:**
     - All you need to know what NPM is https://www.w3schools.com/whatis/whatis_npm.asp
     - All about the format of JSON https://www.w3schools.com/whatis/whatis_json.asp
-3. Icons from Fontawesome
-    - Website https://fontawesome.com/
-4. Submitter to Google Sheet
-    - Github https://github.com/jamiewilson/form-to-google-sheets
 
+    Long Story Short: Node.js bietet den Node Package Manager NPM, der es mir ermöglicht, Pakete zu installieren und zu verwalten. NPM ist auch ein Paketmanager für JavaScript, der mit Node.js installiert wird. Es besteht aus einer Befehlszeilenclient und einer Online-Datenbank von öffentlichen und kostenpflichtigen privaten Paketen, genannt dem NPM-Register. NPM ist der weltweit größte Software-Register. Es besteht aus mehr als 1.000.000 Paketen (Stand 2021).
+    Das können z.B auch eine Sammlung von CSS Klassen sein, ein Paket namens Matierial Design Zum Beispiel:
+
+    ```bash
+    npm install material
+    # Um beispielsweise Material Design zu installieren, dieser wird dann in den node_modules gespeichert
+    ```
+
+    2.1   Open VSC  > Open in integrated Terminal to use CLI:
+
+    ```bash
+    npx create-next-app@latest 
+    # YES at using TypeScript / ESLint / Tailwind CSS / etc
+    npm --version
+    # Check the npm version and update it if necessary with:
+    npm install -g npm@latest
+    ```
+    2.2 **To RUN A SERVER, check out the README.MD file in the project folder with the GET STARTED section**
+
+1. **NEXT.JS:**
+    - Next.js Info: https://kinsta.com/de/wissensdatenbank/next-js
+  
+    Long Story Short: Es ist ein React Framework und baut auf Node.js auf. Next.JS ist im Besitz von Vercel, diese Hosten auch die Projekte. Twitch, Tiktok, Ferrari etc sind typische Next.JS Nutzer.
+
+    -   Next.js ist die ideale Wahl, ein MVP (Minumum Viable Product) für den 28. Dezember als Testzweck den Leuten vorzuführen. Am Ende soll es ja eine komplexere und anspruchsvollere Webanwendung werden, genannt "Full Stack Search Application".
 <br />
 <br />
 
