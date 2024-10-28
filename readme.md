@@ -3,7 +3,7 @@
 
 ***
 
-# ✔- Full Stack Search Engine - ✔
+# ✔ - Full Stack Search Engine - ✔
 
 _**In this webproject as part of the SAE Bachelor program 6GST0XD10x I'm building a full stack search engine with next.js using postgres full-text search and semantic quaring Upstash Vector to be able to use it on a separate subpage depending on the initial situation for my website: www.toycarsaddict.club. You can also find access to the project on my developer page: www.svendolin-productions.ch - I also tried to implement another interesting way of searching: the so called reverse image search.**_
         
@@ -114,6 +114,8 @@ Building Process:
 <br />
 
 ***
+<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/google/google.png?size=48" />
+
 ## How do Search Engines work? ✅
 ***
 
@@ -135,7 +137,16 @@ Building Process:
 
 
 ***
-## Node.JS / NPM / JSON / Next.JS  ✅
+
+<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png?size=30" />
+
+<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png?size=48" />
+
+<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png?size=48" />
+
+<img align="left" alt="JavaScript" width="35px" src="https://github.com/vercel.png?size=40" />
+
+## &nbsp;Node.JS / NPM / JSON / Next.JS  ✅
 ***
 
 1. **NODE.JS:**
@@ -167,19 +178,30 @@ Building Process:
 
     ```bash
     npx create-next-app@latest 
-    # YES at using TypeScript / ESLint / Tailwind CSS / etc
+    # Creates an APP with next.js - Then hit YES at using TypeScript / ESLint / Tailwind CSS / etc
     npm --version
     # Check the npm version and update it if necessary with:
     npm install -g npm@latest
     ```
     2.2 **To RUN A SERVER, check out the README.MD file in the project folder with the GET STARTED section**
 
-1. **NEXT.JS:**
+3. **NEXT.JS:**
     - Next.js Info: https://kinsta.com/de/wissensdatenbank/next-js
   
-    Long Story Short: Es ist ein React Framework und baut auf Node.js auf. Next.JS ist im Besitz von Vercel, diese Hosten auch die Projekte. Twitch, Tiktok, Ferrari etc sind typische Next.JS Nutzer.
+    Long Story Short: Es ist ein React Framework und baut auf Node.js auf. Next.JS ist im Besitz von Vercel, diese Hosten auch die Projekte. Twitch, Tiktok, Ferrari etc sind typische Next.JS Nutzer. Das Hosten über Vercel geht ganz einfach, indem man sich bei Vercel anmeldet und mit Github verknüpft, sodass das Projekt hochgeladen werden kann.
 
     -   Next.js ist die ideale Wahl, ein MVP (Minumum Viable Product) für den 28. Dezember als Testzweck den Leuten vorzuführen. Am Ende soll es ja eine komplexere und anspruchsvollere Webanwendung werden, genannt "Full Stack Search Application".
+    -   Ausserdem bietet Next.JS built-in CSS Support, was mir die Arbeit erleichtert. Somit habe ich bereits in kurzer Zeit ein gutes Basis-Frontend Design erstellt und verliere keine Zeit mit dem Styling oder dem UI/UX Design.
+  
+    3.1   Make things look good with ShadCN (UI library for Next.js):
+
+    More infos: https://ui.shadcn.com/docs
+    ```bash
+    npx shadcn@latest init
+    # Creates an APP with next.js - Then hit YES at using TypeScript / ESLint / Tailwind CSS / etc
+    npm --version
+    # Check the npm version and update it if necessary with:
+    npm
 <br />
 <br />
 
