@@ -193,15 +193,23 @@ Building Process:
     -   Next.js ist die ideale Wahl, ein MVP (Minumum Viable Product) für den 28. Dezember als Testzweck den Leuten vorzuführen. Am Ende soll es ja eine komplexere und anspruchsvollere Webanwendung werden, genannt "Full Stack Search Application".
     -   Ausserdem bietet Next.JS built-in CSS Support, was mir die Arbeit erleichtert. Somit habe ich bereits in kurzer Zeit ein gutes Basis-Frontend Design erstellt und verliere keine Zeit mit dem Styling oder dem UI/UX Design.
   
-    3.1   Make things look good with ShadCN (UI library for Next.js):
+    3.1   Make things look good with ShadCN (UI library for Next.js, a DEFAULT DESIGN for my project):
 
-    More infos: https://ui.shadcn.com/docs
+    - More infos: https://ui.shadcn.com/docs
+
+    - UI Library for React and Next.js:
     ```bash
     npx shadcn@latest init
-    # Creates an APP with next.js - Then hit YES at using TypeScript / ESLint / Tailwind CSS / etc
-    npm --version
-    # Check the npm version and update it if necessary with:
-    npm
+    # Installs the latest ShadCN UI package - Then I hit "Default" / "Slate" / "yes"
+    # It then creates a file called "components.json where this configuration will be added
+
+3. **TAILWIND**
+    - Next.js Info: https://kinsta.com/de/wissensdatenbank/next-js
+  
+    Long Story Short: Es ist ein React Framework und baut auf Node.js auf. Next.JS ist im Besitz von Vercel, diese Hosten auch die Projekte. Twitch, Tiktok, Ferrari etc sind typische Next.JS Nutzer. Das Hosten über Vercel geht ganz einfach, indem man sich bei Vercel anmeldet und
+
+
+
 <br />
 <br />
 
@@ -212,6 +220,7 @@ Building Process:
 | must | Name | Creator |  |
 |:--:|:--------------|:-------------:|--------------:|
 | ✔️ | Prettier - Code formatter | Prettier | [link](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
+| ✔️ | Tailwind CSS intellisense - CSS tooling. Hover on Tailwind ClassNames to see the regular CSS names | Tailwind Labs | [link](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) |
 
 
 
