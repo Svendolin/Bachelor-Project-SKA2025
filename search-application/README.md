@@ -26,6 +26,14 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 **=> STOP the Server with CTRL + C**
 
+## How to comment on .tsx files?
+
+Simply use the following syntax:
+
+```tsx
+{/* This is a comment */}
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

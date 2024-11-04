@@ -9,8 +9,8 @@ _**In this webproject as part of the SAE Bachelor program 6GST0XD10x I'm buildin
         
 | TYPE | LINK | 
 |:--------------| :--------------|
-| Website where the project is going to be implemented:| [www.toycarsaddict.club ](https://toycarsaddict.club/)|
-| Websites where all my projects are staged including this one: | [www.svendolin-productions.club ](https://svendolin-productions.ch/)|
+| Website where the project is going to be implemented in a later period:| [www.toycarsaddict.club ](https://toycarsaddict.club/)|
+| Website where all my projects are staged including this one: | [www.svendolin-productions.club ](https://svendolin-productions.ch/)|
 
 
 <br />
@@ -149,25 +149,34 @@ Building Process:
 ## &nbsp;Node.JS / NPM / JSON / Next.JS  ✅
 ***
 
+
 1. **NODE.JS:**
+   <hr>
+
     - Node.js Info https://www.w3schools.com/nodejs/
     - Node.js more Info:https://www.w3schools.com/nodejs/nodejs_intro.asp
     - Node.js Website: https://nodejs.org/en
     - My Github Repo about node and more: https://github.com/Svendolin/All-about-AJAX-and-Node.js
 
-    Long Story Short: Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+    In a NUTHSELL: Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
       - Da ich mit Daten im Frontend und Backend arbeiten möchte, ist Node.js die perfekte Lösung. Es ermöglicht mir, JavaScript im Backend auszuführen und somit Daten zu verarbeiten und zu speichern.
       - Backend-Server nutzen JAVA, PHP, Python, Ruby, C# oder Node.js. Node.js ist für mich die gute Wahl, da ich  JavaScript bereits kenne und verwende Es ist auch eine gute Wahl für Anwendungen, die viele Eingaben und Ausgaben haben, da es asynchron ist.
       - Für das Asynchrone Arbeiten ist Node.js perfekt. Es ist nicht blockierend und kann viele Anfragen gleichzeitig bearbeiten. Es ist auch sehr schnell, da es auf der V8-Engine von Google basiert. Hier kommt Ajax zum Einsatz, um Daten asynchron zu übertragen. Sprich:
       - Einfügen und Laden von Inhalten us einer Datenbank/einem Server (z.B. localhost), ohne die Webseite jedes Mal zu aktualisieren, oder bspw. beim Klicken auf eine Schaltfläche, wie den Search-Button, ohne die Seite neu zu laden.
       - Ein localhost bedeutet auf Deutsch „lokaler Host“ oder „lokaler Server“ und wird verwendet, um eine IP-Verbindung oder einen Anruf zu einem lokalen Computer herzustellen. Dieser wird hier in dieser React Umgebung auf Localhost:3000 ausgeführt.
 
+    <br>
+
 2. **NPM and JSON:**
+    <hr>
+
+    In a NUTSHELL: Node.js bietet den Node Package Manager NPM, der es mir ermöglicht, Pakete zu installieren und zu verwalten. NPM ist auch ein Paketmanager für JavaScript, der mit Node.js installiert wird. Es besteht aus einer Befehlszeilenclient und einer Online-Datenbank von öffentlichen und kostenpflichtigen privaten Paketen, genannt dem NPM-Register. NPM ist der weltweit größte Software-Register. Es besteht aus mehr als 1.000.000 Paketen (Stand 2021).
+    Das können z.B auch eine Sammlung von CSS Klassen sein, ein Paket namens Matierial Design Zum Beispiel:
+
     - All you need to know what NPM is https://www.w3schools.com/whatis/whatis_npm.asp
     - All about the format of JSON https://www.w3schools.com/whatis/whatis_json.asp
 
-    Long Story Short: Node.js bietet den Node Package Manager NPM, der es mir ermöglicht, Pakete zu installieren und zu verwalten. NPM ist auch ein Paketmanager für JavaScript, der mit Node.js installiert wird. Es besteht aus einer Befehlszeilenclient und einer Online-Datenbank von öffentlichen und kostenpflichtigen privaten Paketen, genannt dem NPM-Register. NPM ist der weltweit größte Software-Register. Es besteht aus mehr als 1.000.000 Paketen (Stand 2021).
-    Das können z.B auch eine Sammlung von CSS Klassen sein, ein Paket namens Matierial Design Zum Beispiel:
+    
 
     ```bash
     npm install material
@@ -185,10 +194,20 @@ Building Process:
     ```
     2.2 **To RUN A SERVER, check out the README.MD file in the project folder with the GET STARTED section**
 
-3. **NEXT.JS:**
+    ```bash
+    npm run dev (<3 worked for me pretty well as well as CTRL + C to stop the server <3)
+    ```
+    **[!] Important note: Always check the path: Rightclick on your folder in VSC > Open with integrated Terminal > Run the server from this path (because in my example I initialized .git outside the folder)**
+
+    <br>
+
+1. **NEXT.JS:**
+   <hr>
+
+    In a NUTSHELL: Es ist ein React Framework und baut auf Node.js auf. Next.JS ist im Besitz von Vercel, diese Hosten auch die Projekte. Twitch, Tiktok, Ferrari etc sind typische Next.JS Nutzer. Das Hosten über Vercel geht ganz einfach, indem man sich bei Vercel anmeldet und mit Github verknüpft, sodass das Projekt hochgeladen werden kann.
     - Next.js Info: https://kinsta.com/de/wissensdatenbank/next-js
   
-    Long Story Short: Es ist ein React Framework und baut auf Node.js auf. Next.JS ist im Besitz von Vercel, diese Hosten auch die Projekte. Twitch, Tiktok, Ferrari etc sind typische Next.JS Nutzer. Das Hosten über Vercel geht ganz einfach, indem man sich bei Vercel anmeldet und mit Github verknüpft, sodass das Projekt hochgeladen werden kann.
+    
 
     -   Next.js ist die ideale Wahl, ein MVP (Minumum Viable Product) für den 28. Dezember als Testzweck den Leuten vorzuführen. Am Ende soll es ja eine komplexere und anspruchsvollere Webanwendung werden, genannt "Full Stack Search Application".
     -   Ausserdem bietet Next.JS built-in CSS Support, was mir die Arbeit erleichtert. Somit habe ich bereits in kurzer Zeit ein gutes Basis-Frontend Design erstellt und verliere keine Zeit mit dem Styling oder dem UI/UX Design.
@@ -202,13 +221,32 @@ Building Process:
     npx shadcn@latest init
     # Installs the latest ShadCN UI package - Then I hit "Default" / "Slate" / "yes"
     # It then creates a file called "components.json where this configuration will be added
-
-3. **TAILWIND**
-    - Next.js Info: https://kinsta.com/de/wissensdatenbank/next-js
-  
-    Long Story Short: Es ist ein React Framework und baut auf Node.js auf. Next.JS ist im Besitz von Vercel, diese Hosten auch die Projekte. Twitch, Tiktok, Ferrari etc sind typische Next.JS Nutzer. Das Hosten über Vercel geht ganz einfach, indem man sich bei Vercel anmeldet und
+    ```
 
 
+4. **TAILWIND:**
+    <hr>
+    In a NUTSHELL: Tailwind ist ein Utility-First-CSS-Framework, das seinen Nutzern Utility Klassen bereitstellt. Durch die Verwendung dieser Klassen lassen sich schnell und einfach eigene, einzigartige Designs erstellen. Für die Gestaltung von Webseiten enthält Tailwind die Grundlagen, wie z.B. Farben, Größen, Ränder, Positionierungen usw. Komponenten (engl components) müssen von Nutzern selbst erstellt werden. Damit unterscheidet es sich von anderen CSS Frameworks wie z.B. Bootstrap und Bulma, die vorgefertigte UI Komponenten anbieten. Komponenten lassen sich in Tailwind inline stylen, weshalb es nicht mehr nötig ist, eine separate CSS Datei anzulegen.
+
+    - More about React and Tailwind on another repo from me: https://github.com/Svendolin/All-about-React
+
+    [+] Es gibt eine Standardkonfiguration, die sich einfach mit einer tailwind.config.js Datei überschreiben lässt. = Perfekt anpassbar.
+
+    [+] Durch die von Tailwind bereitgestellten Hilfsklassen spart man sich das Benennen von Klassen, was die Arbeit erleichtert
+
+    [+] Mit der IntelliSense Tailwind CSS Extension für Visual Studio Code können Nutzer die Utility Klassen direkt im Editor sehen und auswählen, somit sehe ich beim Hovern die originalen CSS Klassennamen.
+
+    [+] Tailwind CSS ist ein Open-Source-Projekt und kann kostenlos genutzt werden.
+
+
+4. **LUCIDE.REACT:**
+    <hr>
+    In a NUTSHELL: Lucide.dev is an icon library with tons of SVG icons to style and implement with our react project
+
+    - Simply install it with npm in your terminal:
+    ```bash
+    npm install lucide-react
+    ```
 
 <br />
 <br />
