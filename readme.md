@@ -83,6 +83,7 @@ So I decided to build my own full stack search engine on a separate subpage.
 
 **Implementig the Technique of SEMANTIC SEARCH QUERYING Upstash Vector**
 * Instant Matches from Database => Also from those which are similar in meaning but dont exactly match the search term
+* "Testen Sie unsere speziell entwickelte hybride Suchmaschine, die die Suchgenauigkeit erhöht, indem sie semantisch verwandte Ergebnisse abfragt"
 
 **Full Text Search:**
 * Super powerful full text search capabilities of Postgres
@@ -103,8 +104,12 @@ Building Process:
 ---
 
 **1) Homepage - Create a basic page without too many details and design elements**
+  * React.JS / Next.JS / NPM / JSON / Tailwind / Lucide.React - The reason why is exxplained down below
+  * Responsive Design so user can test it on mobile devices as well as on desktop
 
 **2) Searchbar - Creating a searchbar**
+  * Intuitive searchbar with a search icon and a text field and accessible to use
+  * functional, for example hitting the search will put the state in the URL and the search results will be displayed (also for sharing the URL or reloading), it should keep all the progress
 
 **3) Product Catalogue - Creating a product catalogue with a list of model cars + Product Preview**
 
@@ -220,7 +225,19 @@ Building Process:
     ```bash
     npx shadcn@latest init
     # Installs the latest ShadCN UI package - Then I hit "Default" / "Slate" / "yes"
-    # It then creates a file called "components.json where this configuration will be added
+    # It then creates a file called "components.json" where this configuration will be added
+    ```
+
+    3.2   Beautiful looking Search Bar out of the box with full accessability:
+
+    - More infos: https://ui.shadcn.com/docs
+
+    - Part of the UI Library for React and Next.js:
+    ```bash
+    npx shadcn@latest add input
+    # Installs the fully accessibly input component
+    # It then creates a file called "input.tsx" which we can use as a basis for our search bar
+    # It is added at components/ui/input.tsx
     ```
 
 
@@ -239,7 +256,7 @@ Building Process:
     [+] Tailwind CSS ist ein Open-Source-Projekt und kann kostenlos genutzt werden.
 
 
-4. **LUCIDE.REACT:**
+5. **LUCIDE.REACT:**
     <hr>
     In a NUTSHELL: Lucide.dev is an icon library with tons of SVG icons to style and implement with our react project
 
