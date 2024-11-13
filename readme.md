@@ -87,7 +87,7 @@ So I decided to build my own full stack search engine on a separate subpage.
 
 **Full Text Search:**
 * Super powerful full text search capabilities of Postgres
-* When it matches the search term directly, it will be displayed first on the top as the most reöevant result
+* When it matches the search term directly, it will be displayed first on the top as the most relevant result
 
 **Advanced  Next.js routing patterns:**
 * URL switches but the core layout stays the same (Car with all the informations and stuff)
@@ -110,7 +110,9 @@ Building Process:
 **2) Searchbar - Creating a searchbar**
   * Intuitive searchbar with a search icon and a text field and accessible to use
   * functional, for example hitting the search will put the state in the URL and the search results will be displayed (also for sharing the URL or reloading), it should keep all the progress
-
+  * The entered text should not be lost despite pressing the Escape key
+  * It should be possible to start the search both by pressing the Enter key and by clicking on the search symbol.
+  
 **3) Product Catalogue - Creating a product catalogue with a list of model cars + Product Preview**
 
 
