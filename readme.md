@@ -326,7 +326,7 @@ Building Process:
 |:--------------| :--------------| :--------------|
 | Installation fails with Next.js 15 and shadcn-ui to add a button for my searchbar. This issue appeared around mid October!| [CLICK HERE ](https://github.com/shadcn-ui/ui/issues/5557)| I tried to continue with older next.js version such as 14 than 15 > Went to package.json > dependencies "next" and saw the actual 15 version, so I went back to the latest 14 version with "$ npm install next@14.2.14"  |
 
-- Due to the downgrade back to next.js 14 I had to rename next.config.ts to next.config.js because the typescript version was not compatible with the older next.js version, plus I added following code to the next.config.js file:
+- Due to the downgrade back to next.js 14 I had to rename next.config.ts to next.config.js because the typescript version was not compatible with the older next.js version, plus I replaced it with following code in the next.config.js file:
 
  ```bash
   # Replaced the content of the next.config.js file with the following code:
@@ -340,4 +340,4 @@ Building Process:
   module.exports = nextConfig
   # code end
   ```
-- Then I went to tsconfig.json and VSC wanted to update the file automatically so I answered with YES and started the server again with "npm run dev" and it worked perfectly fine!
+- Then I went to tsconfig.json and VSC, Visual Studio Code where I'm coding right now, wanted to update the file automatically, so I answered with YES and started the server again with "npm run dev" and it worked perfectly fine!
