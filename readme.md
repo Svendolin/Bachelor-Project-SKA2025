@@ -191,7 +191,9 @@ Building Process:
     2.1   Open VSC  > Open in integrated Terminal to use CLI:
 
     ```bash
-    npx create-next-app@latest 
+    #[!] This would be the correct installation, BUT...:
+    npx create-next-app@latest #...I had an issue with the latest version of Next.js 15 and shadcn-ui, look at the bottom of this readme! So at the moment you should use the latest 14 version instead by typing:
+    ====>>> npx create-next-app@14.2.14
     # Creates an APP with next.js - Then hit YES at using TypeScript / ESLint / Tailwind CSS / etc
     npm --version
     # Check the npm version and update it if necessary with:
@@ -206,7 +208,7 @@ Building Process:
 
     <br>
 
-1. **NEXT.JS:**
+1. **NEXT.JS and SHADCN:**
    <hr>
 
     In a NUTSHELL: Es ist ein React Framework und baut auf Node.js auf. Next.JS ist im Besitz von Vercel, diese Hosten auch die Projekte. Twitch, Tiktok, Ferrari etc sind typische Next.JS Nutzer. Das Hosten über Vercel geht ganz einfach, indem man sich bei Vercel anmeldet und mit Github verknüpft, sodass das Projekt hochgeladen werden kann.
@@ -277,29 +279,9 @@ Building Process:
 | ✔️ | Prettier - Code formatter | Prettier | [link](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
 | ✔️ | Tailwind CSS intellisense - CSS tooling. Hover on Tailwind ClassNames to see the regular CSS names | Tailwind Labs | [link](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) |
 
-
-
 <br />
 <br />
 
-***
-## Useful Assistance ✅
-***
-``123`` = 123
-
-_**More infos:**_
-
-
-
-```js
-/* ---- BASIC EXAMPLE ---- */
-
-
-```
-
-
-<br />
-<br />
 
 
 
@@ -310,11 +292,11 @@ _**More infos:**_
 ## &nbsp;DESIGN ELEMENTS I USED HERE ✅
 ***
 
-| ELEMENT | USE CASE | 
+| ELEMENT | Library / Component Links | 
 |:--------------| :--------------|
-| NAV | Fully responsive Navigation |
-| BTTB | Back to the top button |
-|LMB| Load more button (TODO)|
+| ICONS| [LUCIDE](https://lucide.dev/icons/categories#accessibility) |
+| SEARCH BAR INPUT | [SHADCN](https://ui.shadcn.com/docs/components/input) |
+| BUTTON| [SHADCN](https://ui.shadcn.com/docs/components/button)|
 
 
 
@@ -332,10 +314,30 @@ _**More infos:**_
 <br />
 
 ***
-## FAQs ✅
+## DEBUGGING and ERROR LOG ❌
 ***
-0 Questions have been asked, 0 answers have been given, 0 changes have been made.
+1 problems have been detected, 1 answers have been given, 1 solutions have been made.
 
-| Questions | Anwers | Changes |
+| Questions | Anwers | Solutions |
 |:--------------|:-------------:|--------------:|
-| 0 | 0 | 0 |
+| 1 | 1 | 1 |
+
+| PROBLEM | LINK | SOLUTION TO WORK ON | 
+|:--------------| :--------------| :--------------|
+| Installation fails with Next.js 15 and shadcn-ui to add a button for my searchbar. This issue appeared around mid October!| [CLICK HERE ](https://github.com/shadcn-ui/ui/issues/5557)| I tried to continue with older next.js version such as 14 than 15 > Went to package.json > dependencies "next" and saw the actual 15 version, so I went back to the latest 14 version with "$ npm install next@14.2.14"  |
+
+- Due to the downgrade back to next.js 14 I had to rename next.config.ts to next.config.js because the typescript version was not compatible with the older next.js version, plus I added following code to the next.config.js file:
+
+ ```bash
+  # Replaced the content of the next.config.js file with the following code:
+  // @ts-check
+ 
+  /** @type {import('next').NextConfig} */
+  const nextConfig = {
+    /* config options here */
+  }
+ 
+  module.exports = nextConfig
+  # code end
+  ```
+- Then I went to tsconfig.json and VSC wanted to update the file automatically so I answered with YES and started the server again with "npm run dev" and it worked perfectly fine!
