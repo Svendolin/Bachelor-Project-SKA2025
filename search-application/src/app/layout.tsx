@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="relative min-h-screen isolate overflow-hidden border-b border-grey-200 bg-white">
+        <div className="relative min-h-screen isolate overflow-hidden border-b border-grey-200 bg-white text-slate-900">
           { /* Grid SVG Background layer */ }
           <svg
             className='absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]'
@@ -64,7 +64,7 @@ export default function RootLayout({
               <h1 className="tracking-tight text-4xl sm:text-6xl font-bold">FindYourModelcar 2.0</h1>
               <h2 className="tracking-tight text-1xl sm:text-2xl font-bold">- Does your car exist in 1:64 scale? -</h2>
             <p className="max-w-xl text-center test-1xl text-slate-700">
-              Test our specially developped hybrid search engine that enhances search accuracy by 
+              Test our specially developped modelcar hybrid search engine that enhances search accuracy by 
               querying semantically related results:
             </p>
             {/* SearchBar custom component */}

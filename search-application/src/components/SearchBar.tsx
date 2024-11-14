@@ -1,6 +1,6 @@
 "use client";
 
-import { Search } from 'lucide-react';
+import { Loader2, Search } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { useRef, useState, useTransition } from 'react';
@@ -36,7 +36,9 @@ const SearchBar = () => {
       <div className="relative h-14 z-10 rounded-md">
         {/* This key element will keep the text in the searchbar even though the user hits esc */}
         {/* Same goes when the user hits ENTER to trigger the search functionality */}
+        {/* The user can also click the SEARCH BUTTON to trigger the search functionality */}
         <Input 
+        disabled={isSearching}
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={(e) => {
@@ -52,10 +54,12 @@ const SearchBar = () => {
   
         {/* Same same goes with the user when he doesnt click ENTER but the SEARCH BUTTON to trigger the search functionality */}
         <Button
+        disabled={isSearching}
         size={'sm'}
         onClick={search} 
         className='absolute right-0 inset-y-0 h-full rounded-1-none'>
-          <Search className='h-7 w-7' />
+          {isSearching ? <Loader2 className='h-6 w-6' /> :
+          <Search className='h-7 w-7' />}
 
         </Button>
 

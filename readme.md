@@ -112,6 +112,9 @@ Building Process:
   * functional, for example hitting the search will put the state in the URL and the search results will be displayed (also for sharing the URL or reloading), it should keep all the progress
   * The entered text should not be lost despite pressing the Escape key
   * It should be possible to start the search both by pressing the Enter key and by clicking on the search symbol.
+  * Loading states / Zustände: Wenn wir gerade dabei sind, unsere Datenbank im Vektorspeicher der semantischen Suche zu durchsuchen und abzufragen, dann wollen wir einen Ladezustand anzeigen. Während des Prozesses sollte der Benutzer wissen, dass die Suche noch läuft und er nichts mehr eintippen kann.
+  * Wir können ein Array von Abfragen (Array of queries) oder eine undefinierte Abfrage (undefined query) nicht verarbeiten, insbesondere wenn es sich nicht um eine Zeichenkette (string) handelt. Weiterleitung zur Stammseite. In search.tsx passiert die ganze Magie
+}
   
 **3) Product Catalogue - Creating a product catalogue with a list of model cars + Product Preview**
 
@@ -138,6 +141,13 @@ Building Process:
     - The PageRank algorithm is based on the number of links that point to a page
     - The more links point to a page, the more important it is
     - The more important a page is, the higher it is ranked
+
+=> Im Search folder / page.tsx: Der erste Schritt ist die Abfrage innerhalb unserer Seite, dies kommt von den Suchparametern, die wir automatisch von next.js an die Seite übergeben bekommen.
+Wir können einfach destrukturieren die Suche Parameter als die Requisiten, die an die Seite übergeben werden.
+Bei den Suchparametern handelt es sich um Objekte, von denen jedes einen dynamischen Schlüssel hat, der eine Art String ist. Der Wert ist ein String oder ein String-Array oder natürlich undefiniert, wenn die Suchanfrage gar nicht übergeben wird
+(First step is getting the query inside our page, this comes from the search parameters that we get passed automatically be next.js into the page.
+We can simply destructure the search params as the props that are passed to the page.
+The search parameters are an Object, each of these has a dynamic key which is a type of string. The Value will be a string or a string array or naturally undefined if the search query is not passed at all)
 
 <br />
 <br />
