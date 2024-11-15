@@ -13,4 +13,7 @@ const Page = ({searchParams}: PageProps) => {
     return redirect('/') // We can not process an array of queries or an undefined query especially if its not a string. Redirect to the root page.
 }
 
+// quering logic goes here to get the database that we want to show to the user
+
+};
 export default Page;

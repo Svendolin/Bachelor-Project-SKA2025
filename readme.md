@@ -73,15 +73,15 @@ So I decided to build my own full stack search engine on a separate subpage.
 <br />
 
 ***
-## Very Important personal Infos (Rebuild afterwards) ✅
+## My personal WISHLIST: ✅
 ***
 
 
 
-**Time to build:**
+**Loading States:**
 * Smooth loading states while we are waiting for the search results = With Next.js very enjoyable => In Miliseconcs List from backend 
 
-**Implementig the Technique of SEMANTIC SEARCH QUERYING Upstash Vector**
+**Implementig the Technique of SEMANTIC SEARCH QUERYING Upstash Vector:**
 * Instant Matches from Database => Also from those which are similar in meaning but dont exactly match the search term
 * "Testen Sie unsere speziell entwickelte hybride Suchmaschine, die die Suchgenauigkeit erhöht, indem sie semantisch verwandte Ergebnisse abfragt"
 
@@ -99,12 +99,26 @@ So I decided to build my own full stack search engine on a separate subpage.
 **Product Catalogue:**
 * Filled with an ImageID and descriptions
 * Can be easily updated and extended
+
+**Database:**
+* Product catalogue with content can be optimally managed using PostgresQL
+* Easy access to data, quick queries and simple administration in a safe environment
 ---
-Building Process:
+Building Process: 🔧
 ---
 
 **1) Homepage - Create a basic page without too many details and design elements**
-  * React.JS / Next.JS / NPM / JSON / Tailwind / Lucide.React - The reason why is exxplained down below
+
+  1.1) **React.js** ist die ideale Wahl, um möglichst effizient eine nutzbare Benutzeroberfläche mittels Komponenten aufzubauen. Andere Javascript libraries wie Angular und Vue.js hatte ich bereits in der Vergangenheit verwendet, hatte mit React aber bisher am meisten zu tun. Angular wurde im Schulunterricht behandelt sowie für unser PARTUM MEDIA Projekt benutzt. Deshalb wollte ich etwas ähnliches nehmen.
+
+  1.2) **Next.js** kommt hier als React Framework ins Spiel, was auf Node.js basiert und im Besitz von Vercel ist. Was ideal ist, wenn man das Projekt dann auch auf Vercel hosten bzw deployen möchte. Hierzu gibt es auch viel im Netz.
+
+  1.3) **ShadCN** ist eine UI Library für Next.js, die ich hier benutze, um beim Design etwas Standards einzubauen. Für den Bachelor of Science kann ich so den Fokus auf das technische legen und dadurch nicht übermässig Zeit in Erklärungen für das UI / UX Design verlieren.
+
+  1.4) **Tailwind** ist ein Utility-First-CSS-Framework, das seinen Nutzern Utility Klassen bereitstellt und einheitliche Vorganben mitbringt, wie sich das Design verhalten wird. So brauche ich hier nicht ewigs Zeit in das Styling von einzelnen CSS Elementen zu verbringen. Mit dem CSS Tailwind Intellisense Extension für Visual Studio Code kann ich die Utility Klassen direkt im Editor sehen und auswählen und habe trotzdem mein CSS.
+
+  1.5) **Lucide.dev** ist eine Icon Library mit einer Vielzahl von SVG Icons, die ich hier benutze, um das Design etwas aufzupeppen.
+  
   * Responsive Design so user can test it on mobile devices as well as on desktop
 
 **2) Searchbar - Creating a searchbar**
@@ -163,7 +177,7 @@ The search parameters are an Object, each of these has a dynamic key which is a 
 
 <img align="left" alt="JavaScript" width="35px" src="https://github.com/vercel.png?size=40" />
 
-## &nbsp;Node.JS / NPM / JSON / Next.JS  ✅
+## &nbsp;Node.JS / NPM / JSON / Next.JS + Personal USE CASE:  ✅
 ***
 
 
@@ -278,6 +292,28 @@ The search parameters are an Object, each of these has a dynamic key which is a 
     ```bash
     npm install lucide-react
     ```
+
+  6. **NEON.TECH postgres Database:**
+      <hr>
+      In a NUTSHELL: neon.tech ist eine moderne serverless PostgresQL Plattform, die es ermöglicht, Datenbanken schnell und einfach zu erstellen und zu verwalten. Dabei können Datenbanken und Branches bei verschiedenen Cloudanbietern und Regionen gestartet werden. Entsprechend dem “serverless” Ansatz stoppt jeder Branch automatisch wieder, wenn der Traffic aufhört. Neon is a serverless, scalable implementation of PostgreSQL that you can run on-premise or try through its managed service.
+
+      Why not MYSQL or MongoDB as I usuallly did?
+
+      [+] Freies Experimentieren ohne Auswirkungen auf den Hauptzweig
+
+      [+] Sofortiges Sichern der Datenbank. Wenn Daten versehentlich verloren gehen, können wir auf den letzten guten Zweig umschalten.
+
+      [+] Vereinfachte Integrationstests. Entwickler können Tests in testspezifischen Zweigen ausführen.
+
+      [+] Sichere Erprobung automatisierter Datenbankmigrationen in der Produktion.
+
+      [+] Isolierte Ausführung von Analyse- oder maschinellen Lernprozessen.
+      
+      [!] Mit herkömmlichen Datenbank-Engines ist das alles nicht möglich. Zumindest nicht ohne weiteres. Einige Datenbank-Engines wie SQL Server verfügen über Snapshots, mit denen tatsächlich sofortige Kopien einer Datenbank erstellt werden können. Aber Snapshots sind schreibgeschützt, und das schränkt ihren Nutzen ein. Bei den meisten Datenbank-Engines müssen wir auf kompliziertere Mechanismen wie Sicherung und Wiederherstellung oder Replikation zurückgreifen.
+
+
+      - More infos: https://neon.tech/home
+      - Pricing will be set at Free Plan due to testing purposes which can be seen [HERE](https://neon.tech/pricing?gad_source=1&gclid=CjwKCAiA3Na5BhAZEiwAzrfagKK2py-GVkUn5fylQB12C9z8k8pYm5T3wYNkvtC1CynzJZUeS2XfNxoCA0oQAvD_BwE)
 
 <br />
 <br />
