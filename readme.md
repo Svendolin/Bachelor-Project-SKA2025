@@ -293,7 +293,7 @@ The search parameters are an Object, each of these has a dynamic key which is a 
     npm install lucide-react
     ```
 
-  6. **NEON.TECH postgres Database:**
+  6. **NEON.TECH POSTGRESsql Database + Fulltext Search:**
       <hr>
       In a NUTSHELL: neon.tech ist eine moderne serverless PostgresQL Plattform, die es ermöglicht, Datenbanken schnell und einfach zu erstellen und zu verwalten. Dabei können Datenbanken und Branches bei verschiedenen Cloudanbietern und Regionen gestartet werden. Entsprechend dem “serverless” Ansatz stoppt jeder Branch automatisch wieder, wenn der Traffic aufhört. Neon is a serverless, scalable implementation of PostgreSQL that you can run on-premise or try through its managed service.
 
