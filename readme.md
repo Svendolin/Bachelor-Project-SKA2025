@@ -299,7 +299,7 @@ The search parameters are an Object, each of these has a dynamic key which is a 
 
       Why not MYSQL or MongoDB as I usuallly did?
 
-      [+] Freies Experimentieren ohne Auswirkungen auf den Hauptzweig
+      [+] Branching: Freies Experimentieren ohne Auswirkungen auf den Hauptzweig main
 
       [+] Sofortiges Sichern der Datenbank. Wenn Daten versehentlich verloren gehen, können wir auf den letzten guten Zweig umschalten.
 
@@ -311,9 +311,32 @@ The search parameters are an Object, each of these has a dynamic key which is a 
       
       [!] Mit herkömmlichen Datenbank-Engines ist das alles nicht möglich. Zumindest nicht ohne weiteres. Einige Datenbank-Engines wie SQL Server verfügen über Snapshots, mit denen tatsächlich sofortige Kopien einer Datenbank erstellt werden können. Aber Snapshots sind schreibgeschützt, und das schränkt ihren Nutzen ein. Bei den meisten Datenbank-Engines müssen wir auf kompliziertere Mechanismen wie Sicherung und Wiederherstellung oder Replikation zurückgreifen.
 
-
       - More infos: https://neon.tech/home
       - Pricing will be set at Free Plan due to testing purposes which can be seen [HERE](https://neon.tech/pricing?gad_source=1&gclid=CjwKCAiA3Na5BhAZEiwAzrfagKK2py-GVkUn5fylQB12C9z8k8pYm5T3wYNkvtC1CynzJZUeS2XfNxoCA0oQAvD_BwE)
+
+
+     - Neon automatically scales my project's compute resources up or down to meet demand. The recommended settings for my free plan are currently selected at 2vCPU and 8GB RAM max.
+  
+      - Don't forget to copy the unique database URL from the Neon.tech dashboard and paste it into the .env file (as a connection string) which wont be uploaded to Github for security reasons.
+
+7. **DRIZZLE.ORM**
+    <hr>
+    In a NUTSHELL: Drizzle ORM ist ein TypeScript-basiertes Daten-Framework. ORMs wie Drizzle helfen bei der Verbindung mit einem Datenbankserver und der Ausführung von Abfragen und Operationen über objektbasierte APIs. In einem JavaScript/TypeScript ORM wird jede Art von Datenbankentität durch einen JS/TS-Prototyp dargestellt. Für jeden Prototyp werden Tabellen erzeugt, Spalten werden durch Felder und Attribute dargestellt, während Zeilen für jede Instanz des Prototyps erstellt werden.
+
+    - Drizzle's official website and docs: https://orm.drizzle.team/docs/overview
+
+    
+    ```bash
+    # Install Note-Postgres Package
+    npm install drizzle-orm
+    # Install Note-Postgres Package kit, a studio for managing and interacting to the database
+    npm install -D drizzle-kit
+    # m audit fix is intended to automatically upgrade / fix vulnerabilities in npm packages because I had 1 vulnerability
+    npm audit fix
+    ```
+
+   
+
 
 <br />
 <br />

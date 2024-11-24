@@ -1,3 +1,5 @@
+
+import { redirect } from "next/navigation"; // Personally fixed with Copilot
 // The Search folder will end up in the URL path /search
 // Page.tsx will be the content shown under the queried URL
 interface PageProps {
