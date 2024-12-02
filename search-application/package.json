@@ -1,1 +1,1 @@
-{"scripts":{"drizzle:push":"npx drizzle-kit push --config=./drizzle.config.ts"},"dependencies":{"dotenv":"^16.4.5","drizzle-orm":"^0.36.4","pg":"^8.13.1"},"devDependencies":{"@types/pg":"^8.11.10","drizzle-kit":"^0.28.1","tsx":"^4.19.2"}}
+{"scripts":{"drizzle:push":"npx drizzle-kit push --config=./drizzle.config.ts"},"dependencies":{"dotenv":"^16.4.5","drizzle-orm":"^0.36.4","next":"^15.0.3","pg":"^8.13.1"},"devDependencies":{"@types/pg":"^8.11.10","drizzle-kit":"^0.28.1","tsx":"^4.19.2"}}

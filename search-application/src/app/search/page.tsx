@@ -1,4 +1,6 @@
 
+import { db } from "@/db";
+import { productsTable } from "@/db/schema";
 import { redirect } from "next/navigation"; // Personally fixed with Copilot
 // The Search folder will end up in the URL path /search
 // Page.tsx will be the content shown under the queried URL
@@ -8,7 +10,7 @@ interface PageProps {
   }
 }
 
-const Page = ({searchParams}: PageProps) => {
+const Page = async ({searchParams}: PageProps) => {
   const query = searchParams.query; // query is the key in the searchParams object which will be either a type string or an array of strings or undefined.
   
   if (Array.isArray(query) || !query) { // !query = is true if query is undefined
@@ -16,6 +18,8 @@ const Page = ({searchParams}: PageProps) => {
 }
 
 // quering logic goes here to get the database that we want to show to the user
+// Type safe SQL Syntax thanks to Drizzle ORM
+let products = await db.select().from(productsTable)
 
 };
 export default Page;

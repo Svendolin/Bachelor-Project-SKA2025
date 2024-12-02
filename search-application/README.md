@@ -207,12 +207,7 @@ The search parameters are an Object, each of these has a dynamic key which is a 
     - All you need to know what NPM is https://www.w3schools.com/whatis/whatis_npm.asp
     - All about the format of JSON https://www.w3schools.com/whatis/whatis_json.asp
 
-    
-
-    ```bash
-    npm install material
-    # Um beispielsweise Material Design zu installieren, dieser wird dann in den node_modules gespeichert
-    ```
+  
 
     2.1   Open VSC  > Open in integrated Terminal to use CLI:
 
@@ -225,6 +220,13 @@ The search parameters are an Object, each of these has a dynamic key which is a 
     # Check the npm version and update it if necessary with:
     npm install -g npm@latest
     ```
+
+
+    ```bash
+    npm install material
+    # Um beispielsweise Material Design zu installieren, dieser wird dann in den node_modules gespeichert
+    ```
+
     2.2 **To RUN A SERVER, check out the README.MD file in the project folder with the GET STARTED section**
 
     ```bash
@@ -319,17 +321,12 @@ The search parameters are an Object, each of these has a dynamic key which is a 
   
       - Don't forget to copy the unique database URL from the Neon.tech dashboard and paste it into the .env file (as a connection string) which wont be uploaded to Github for security reasons.
 
-     ```bash
-      # Install a connector from our db index.ts to the neon postgres database 
-      npm install @neondatabase/serverless
-      ```
-
-6. **DRIZZLE.ORM**
+7. **DRIZZLE.ORM**
     <hr>
     In a NUTSHELL: Drizzle ORM ist ein TypeScript-basiertes Daten-Framework. ORMs wie Drizzle helfen bei der Verbindung mit einem Datenbankserver und der Ausführung von Abfragen und Operationen über objektbasierte APIs. In einem JavaScript/TypeScript ORM wird jede Art von Datenbankentität durch einen JS/TS-Prototyp dargestellt. Für jeden Prototyp werden Tabellen erzeugt, Spalten werden durch Felder und Attribute dargestellt, während Zeilen für jede Instanz des Prototyps erstellt werden.
 
     - Drizzle's official website and docs: https://orm.drizzle.team/docs/overview
-    - **Get started with Drizzle and PostgreSQL:** https://orm.drizzle.team/docs/get-started/postgresql-new
+
     
     ```bash
     # Install Note-Postgres Package
@@ -339,8 +336,12 @@ The search parameters are an Object, each of these has a dynamic key which is a 
     # m audit fix is intended to automatically upgrade / fix vulnerabilities in npm packages because I had 1 vulnerability
     npm audit fix
     ```
+    Time to push our Schema (the datatable) to the database of PostgreSQL by Neon:
+    ```bash
+    # Went through all this: https://orm.drizzle.team/docs/get-started/postgresql-new and directly applied changes to my database using:
+    npx drizzle-kit push
+    ```
 
-    **=> Here are the most important migrations and utility commands like push / pull for the database with drizzle-kit:** https://orm.drizzle.team/docs/kit-overview#how-to-migrate-to-0210
    
 
 
@@ -393,10 +394,10 @@ The search parameters are an Object, each of these has a dynamic key which is a 
 ***
 ## DEBUGGING and ERROR LOG ❌
 ***
-1 issues have been detected, 1 answers have been given, 1 solutions have been made.
+2 issues have been detected, 2 answers have been given, 2 solutions have been made.
 Check out our ISSUES SECTION for more information: [HERE](https://github.com/Svendolin/Bachelor-Project-SKA2025/issues)
 
 | Questions / Issues | Anwers | Solutions |
 |:--------------|:-------------:|--------------:|
-| 1 | 1 | 1 |
+| 2 | 2 | 2 |
 
