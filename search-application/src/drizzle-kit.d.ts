@@ -1,6 +1,6 @@
 declare module 'drizzle-kit' {
-  export interface Config {
-    driver: string;
+  export interface defineConfig {
+    dialect: string;
     schema: string;
     dbCredentials: {
       connectionString: string;

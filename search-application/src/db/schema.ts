@@ -6,7 +6,7 @@ import { pgTable } from "drizzle-orm/pg-core";
 import { doublePrecision } from "drizzle-orm/pg-core";
 
 // Check at 44:05
-// .notNull() is an info that the column is required$
+// .notNull() is an info that the column is required
 // Now this will be out database structure:
 // So we are free to add more columns to this table:
 export const productsTable = pgTable("products", {
@@ -19,3 +19,6 @@ export const productsTable = pgTable("products", {
   createdAt: timestamp("createdAt").defaultNow(),
   updatedAt: timestamp("updatedAt").defaultNow(),
 })
+
+// We get get the statements back from above as one product
+export type Product = typeof productsTable.$inferSelect
