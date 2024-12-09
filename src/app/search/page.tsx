@@ -1,6 +1,7 @@
 
 import { db } from "@/db";
 import { productsTable } from "@/db/schema";
+import { sql } from "drizzle-orm";
 import { redirect } from "next/navigation"; // Personally fixed with Copilot
 // The Search folder will end up in the URL path /search
 // Page.tsx will be the content shown under the queried URL
@@ -19,7 +20,22 @@ const Page = async ({searchParams}: PageProps) => {
 
 // quering logic goes here to get the database that we want to show to the user
 // Type safe SQL Syntax thanks to Drizzle ORM
-let products = await db.select().from(productsTable)
+let products = await db
+.select()
+.from(productsTable)
+.where( // A combination of product name and description:
+  sql`to_tsvector('simple', lower(${productsTable.name} || '' || ${
+    productsTable.description
+  })) @@ to-tsquery('simple', lower(${query
+    .trim()
+    .split(' ')
+    .join('&')}))` // From the db(schema.ts) we are selecting the name column from the productsTable or as a Product description for one big string
+)
+.limit(3) // IMPORTANT: Over here we are limiting the amount of products to 3 (SHOWCASING)
+
+// Render out everythigng we get from the database:
+return <pre>{JSON.stringify(products)}</pre>
+
 
 };
 export default Page;

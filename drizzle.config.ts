@@ -1,13 +1,16 @@
-import 'dotenv/config';
-import { Config } from 'drizzle-kit'; // Wasnt able to import the Config interface from drizzle-kit, so with CoPilot I had to add drizzle-kit.d.ts file at src folder
+import dotenv from 'dotenv';
+import { Config } from 'drizzle-kit'; // Wasn't able to import the Config interface from drizzle-kit, so with CoPilot I had to add drizzle-kit.d.ts file at src folder
+
+dotenv.config();
 
 
-export default {
-  driver: "pg", // pg = Postgres, because of the full text search capabilities
+const config: Config = {
   schema: "./src/db/schema.ts", // The schema where the tables are located
-  dbCredentials: {
-    connectionString: process.env.DATABASE_URL!, // The connection string to the database, that we set this variable into the .env file
-
-  }, 
+  dialect: 'postgresql',
   out: "./drizzle", // The output directory where the generated files will be placed
-} satisfies Config;
+  dbCredentials: {
+    url: process.env.DATABASE_URL || '' // Uses the URL from the .env file or an empty string as default
+  }
+};
+
+export default config;
