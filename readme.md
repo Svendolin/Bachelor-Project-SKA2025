@@ -85,7 +85,7 @@ So I decided to build my own full stack search engine on a separate subpage.
 * Instant Matches from Database => Also from those which are similar in meaning but dont exactly match the search term
 * "Testen Sie unsere speziell entwickelte hybride Suchmaschine, die die Suchgenauigkeit erhöht, indem sie semantisch verwandte Ergebnisse abfragt"
 
-**Full Text Search:**
+**Full Text Search Neon POSTGRES:**
 * Super powerful full text search capabilities of Postgres
 * When it matches the search term directly, it will be displayed first on the top as the most relevant result
 
@@ -222,11 +222,6 @@ The search parameters are an Object, each of these has a dynamic key which is a 
     ```
 
 
-    ```bash
-    npm install material
-    # Um beispielsweise Material Design zu installieren, dieser wird dann in den node_modules gespeichert
-    ```
-
     2.2 **To RUN A SERVER, check out the README.MD file in the project folder with the GET STARTED section**
 
     ```bash
@@ -321,7 +316,17 @@ The search parameters are an Object, each of these has a dynamic key which is a 
   
       - Don't forget to copy the unique database URL from the Neon.tech dashboard and paste it into the .env file (as a connection string) which wont be uploaded to Github for security reasons.
 
-7. **DRIZZLE.ORM**
+      6.1   Install the NEON Serverless Driver:
+
+       - More infos: https://neon.tech/docs/serverless/serverless-driver
+
+       - Connect to Neon from serverless environments over HTTP. The Neon serverless driver uses the neon function for queries over HTTP:
+      ```bash
+      npm install @neondatabase/serverless
+      # Installs the fully accessibly input component
+      ```
+
+6. **DRIZZLE.ORM**
     <hr>
     In a NUTSHELL: Drizzle ORM ist ein TypeScript-basiertes Daten-Framework. ORMs wie Drizzle helfen bei der Verbindung mit einem Datenbankserver und der Ausführung von Abfragen und Operationen über objektbasierte APIs. In einem JavaScript/TypeScript ORM wird jede Art von Datenbankentität durch einen JS/TS-Prototyp dargestellt. Für jeden Prototyp werden Tabellen erzeugt, Spalten werden durch Felder und Attribute dargestellt, während Zeilen für jede Instanz des Prototyps erstellt werden.
 
@@ -341,12 +346,66 @@ The search parameters are an Object, each of these has a dynamic key which is a 
     # Went through all this: https://orm.drizzle.team/docs/get-started/postgresql-new and directly applied changes to my database using:
     npx drizzle-kit push
     ```
+  <br />
+  <br />
 
-   
+8. **FAKER @faker-js/faker**
+    <hr>
+    In a NUTSHELL: faker-js generates massive amounts of fake (but realistic) data for testing and development. More about that here: https://www.npmjs.com/package/@faker-js/faker
+
+    - Simply install it with npm in your terminal:
+    ```bash
+    npm install --save-dev @faker-js/faker
+    ```
+
+  <br />
+
+9. **UPSTASH VECTOR / TSX:**
+    <hr>
+    In a NUTSHELL: Upstash Vector is a serverless vector database designed for working with vector embeddings. In the domain of databases, a vector database is essential for managing numeric representations of objects (images, sounds, text, etc.) in a multi-dimensional space. These databases are focused on efficiently handling vectors for storage, retrieval, and, most importantly, querying based on similarity. 
+    
+    With other words: **I will implement a semantic search querying with Upstash Vector to increase the search accuracy by querying semantically related results.** More about that: https://upstash.com/docs/vector/overall/whatisvector
 
 
-<br />
-<br />
+    9.1   Upstash Vector:
+
+     - Simply install it with npm in your terminal:
+  
+    ```bash
+      npm install @upstash/vector
+    ```
+
+    9.2   TSX installation:
+
+     - TypeScript Execute (tsx): The easiest way to run TypeScript in Node.js
+     - More about that here: https://www.npmjs.com/package/tsx
+     - Getting started: https://tsx.is/getting-started
+  
+    ```bash
+      npm install -D tsx
+      # And add to the JSON file: "tsx": "tsx", in the scripts section
+    ```
+
+    9.3   Continue with Drizzle (as we knew it from chapter 7.):
+
+     - Time to add some randomly seeded data to the database:
+     - More Infos: https://dev.to/anasrin/seeding-database-with-drizzle-orm-fga
+  
+    ```bash
+      npm run drizzle:seed
+      # And add to the JSON file: "tsx": "tsx", in the scripts section
+    ```
+
+     - Time to launch Drizzle-Kit Studio, which is a new way for you to explore SQL database on Drizzle projects.
+     - More Infos: https://orm.drizzle.team/drizzle-studio/overview
+  
+    ```bash
+      npx drizzle-kit studio
+      # And add to the JSON file: "tsx": "tsx", in the scripts section
+    ```
+
+    <br />
+    <br />
 
 ***
 ## Extensions ✅
